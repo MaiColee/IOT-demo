@@ -9,10 +9,10 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(18,GPIO.OUT)
 #define connection variables
-HOST = "192.168.0.101"
-DATABASE = "iot"
-USER = "pi"
-PASSWORD = "1234"
+HOST = "#IP"
+DATABASE = "#Name of database connection"
+USER = "#username of the remote device (Raspberry Pi in this case)"
+PASSWORD = "#password of the remote device"
 db_connection = mysql.connect(host=HOST, database=DATABASE, user=USER, password=PASSWORD)
 #Output connection success
 print("Connected to", db_connection.get_server_info())
